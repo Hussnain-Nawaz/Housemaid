@@ -143,7 +143,7 @@ class _AvailabilityScreenState extends State<AvailabilityScreen> {
               padding: EdgeInsets.all(screenWidth * 0.04),
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFFFEB0D9),
+                  backgroundColor: const Color.fromARGB(255, 241, 128, 188),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(31.5),
                   ),
@@ -310,7 +310,8 @@ class CustomTile extends StatelessWidget {
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           foregroundColor: Colors.white,
-                          backgroundColor: Colors.blue, // Text color
+                          backgroundColor: const Color.fromARGB(
+                              255, 241, 128, 188), // Text color
                         ),
                         onPressed: () => onTimeSelect(true),
                         child: Text(
@@ -322,7 +323,8 @@ class CustomTile extends StatelessWidget {
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           foregroundColor: Colors.white,
-                          backgroundColor: Colors.blue, // Text color
+                          backgroundColor: const Color.fromARGB(
+                              255, 241, 128, 188), // Text color
                         ),
                         onPressed: () => onTimeSelect(false),
                         child: Text(

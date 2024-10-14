@@ -7,7 +7,7 @@
 // import 'package:house_maid_project/APIs/APIsClass.dart';
 // import 'package:house_maid_project/CustomWidgets/errorDialogue.dart';
 // import 'package:house_maid_project/Views/HomeScreen/client.dart';
-// import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/HousemaidBefore.dart';
+// import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/QuestionsScreens/HousemaidBefore.dart';
 // import 'package:house_maid_project/Views/login/loginScreen.dart';
 // import 'package:path/path.dart';
 // import 'package:uni_links3/uni_links.dart';

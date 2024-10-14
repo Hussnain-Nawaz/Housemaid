@@ -15,10 +15,11 @@ class _HourlyRateScreenState extends State<HourlyRateScreen> {
   final HousemaidRegistrationController registrationController =
       Get.find<HousemaidRegistrationController>();
 
-  String selectedCurrency = '£'; // Default currency set to pounds
+  String selectedCurrency = '\$';
+  // Default currency set to pounds
   final TextEditingController rateController = TextEditingController();
 
-  final List<String> currencies = ['£']; // Only allow pound currency
+  final List<String> currencies = ['\$']; // Only allow pound currency
 
   void _navigateToNextScreen() {
     String hourlyRateStr = rateController.text;

@@ -11,7 +11,7 @@ import 'package:http/http.dart' as http;
 
 class APIs {
   final String baseUrl =
-      "https://2914-182-184-252-97.ngrok-free.app/api"; // Base URL for your API
+      "https://e527-39-48-25-65.ngrok-free.app/api"; // Base URL for your API
 
   Future<loginModel> login({
     required String email,

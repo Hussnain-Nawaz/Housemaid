@@ -21,3 +21,17 @@ class OTPController {
     otpController4.dispose();
   }
 }
+
+class OTPController1 {
+  final otpControllers = List.generate(4, (_) => TextEditingController());
+
+  String getOTP() {
+    return otpControllers.map((c) => c.text).join();
+  }
+
+  void dispose() {
+    for (var controller in otpControllers) {
+      controller.dispose();
+    }
+  }
+}

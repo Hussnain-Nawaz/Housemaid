@@ -39,7 +39,7 @@ class ChatListScreen extends StatelessWidget {
 
             return ListTile(
               leading: CircleAvatar(
-                backgroundImage: NetworkImage(chat['avatar']),
+                backgroundImage: AssetImage('assets/images/profileimage.jpg'),
               ),
               title: Text(
                 chat['name'],

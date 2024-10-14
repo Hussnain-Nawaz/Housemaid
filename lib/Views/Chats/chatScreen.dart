@@ -31,7 +31,7 @@ class ChatScreen extends StatelessWidget {
         elevation: 1,
         leading: IconButton(
           icon: CircleAvatar(
-            backgroundImage: NetworkImage(recipientAvatar),
+            backgroundImage: AssetImage('assets/images/profileimage.jpg'),
           ),
           onPressed: () => Get.back(),
         ),
@@ -81,7 +81,10 @@ class ChatScreen extends StatelessWidget {
               );
             }),
           ),
-          _buildMessageInput(), // Message input field
+          _buildMessageInput(),
+          SizedBox(
+            height: 20,
+          ) // Message input field
         ],
       ),
     );
@@ -106,7 +109,8 @@ class ChatScreen extends StatelessWidget {
           ),
           SizedBox(width: 8),
           IconButton(
-            icon: Icon(Icons.send, color: Colors.blue),
+            icon: Icon(Icons.send,
+                color: const Color.fromARGB(255, 247, 88, 141)),
             onPressed: () {
               if (_controller.text.isNotEmpty) {
                 chatController.sendMessage(

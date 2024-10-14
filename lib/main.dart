@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:house_maid_project/Bindings/appbindings.dart';
+import 'package:house_maid_project/Views/Chats/chatsList.dart';
 import 'package:house_maid_project/Views/Dashboard/housemaid.dart/homepage.dart';
 import 'package:house_maid_project/Views/HomeScreen/homeScreen.dart';
 import 'package:house_maid_project/Views/OnboardingScreens/onboardingScreen.dart';
@@ -44,7 +45,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         // '/': (context) => SplashScreenView(),
-        '/': (context) => LoginScreen(),
+        '/': (context) => SplashScreenView(),
         '/onboarding': (context) => OnboardingScreenOne(),
         '/register': (context) => ChooseProfileScreen(),
         '/home': (context) => HomeScreen(),

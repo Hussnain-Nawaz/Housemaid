@@ -43,7 +43,7 @@ class _HouseMaidDashboardState extends State<HouseMaidDashboard> {
         child: BottomNavigationBar(
           currentIndex: _currentIndex,
           selectedItemColor:
-              const Color.fromARGB(255, 103, 99, 101), // Pink for selected item
+              const Color.fromARGB(255, 242, 88, 165), // Pink for selected item
           unselectedItemColor: Colors.black, // Black for unselected items
           showUnselectedLabels: true,
           onTap: (index) {

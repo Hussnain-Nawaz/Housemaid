@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:house_maid_project/APIs/APIsClass.dart'; // Import your API service
 import 'package:house_maid_project/CustomWidgets/errorDialogue.dart';
+import 'package:house_maid_project/Views/Dashboard/housemaid.dart/homepage.dart';
 import 'package:house_maid_project/Views/HomeScreen/client.dart';
 import 'package:house_maid_project/Views/HomeScreen/housemaid.dart';
 import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/address/DataSubmitted.dart'; // Import loginModel
@@ -47,11 +48,14 @@ class LoginController extends GetxController {
       // Handle different status codes and responses
       if (response.statusCode == 200 && response.data!.roleName == 'client') {
         // Successful login
-        Get.to(() => ClientDashboardScreen());
+        ErrorDialog.showError(context,
+            'Client Dashboard is under development.. Will be delivered soon in next  update.');
+
+        Get.to(() => HouseMaidDashboard());
       } else if (response.statusCode == 200 &&
           response.data!.roleName == 'housemaid') {
         // Role does not exist
-        Get.to(() => HousemaidDashboardScreen());
+        Get.to(() => HouseMaidDashboard());
       } else if (response.statusCode == 403) {
         // Role does not exist
         ErrorDialog.showError(context, '${response.message}');

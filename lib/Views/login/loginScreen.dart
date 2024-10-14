@@ -23,8 +23,8 @@ class _LoginScreenState extends State<LoginScreen> {
   final TextEditingController passwordController = TextEditingController();
 
   // final GoogleSignInController googleSignInController =
-  //     Get.put(GoogleSignInController()); 
-      // Initialize GoogleSignInController
+  //     Get.put(GoogleSignInController());
+  // Initialize GoogleSignInController
   final LoginController loginController =
       Get.put(LoginController()); // Initialize LoginController
 
@@ -230,6 +230,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               Expanded(
                                 child: GestureDetector(
                                   onTap: () {
+                                    //google
                                     // googleSignInController.initiateGoogleSignIn(
                                     //     context, roleId);
                                   },
@@ -337,7 +338,7 @@ class _LoginScreenState extends State<LoginScreen> {
               // Show loader when login is in progress
               // if (loginController.isLoading.value ||
               //     googleSignInController.isLoading.value)
-                if (loginController.isLoading.value)
+              if (loginController.isLoading.value)
                 Center(
                   child: CircularProgressIndicator(
                     color: Colors.pink, // Customize loader color here
