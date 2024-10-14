@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:file_picker/file_picker.dart';
@@ -6,7 +5,7 @@ import 'package:house_maid_project/Controllers/Registeration/housemaid/Housemaid
 import 'package:house_maid_project/CustomWidgets/errorDialogue.dart';
 import 'dart:io';
 
-import 'package:house_maid_project/Views/DriverLicense/KYC_Steps.dart';
+import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/DriverLicense/KYC_Steps.dart';
 
 class VaccinationProofScreen extends StatefulWidget {
   const VaccinationProofScreen({super.key});

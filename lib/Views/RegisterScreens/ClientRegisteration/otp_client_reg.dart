@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:house_maid_project/Controllers/Registeration/Client/CLientOTPController.dart';
 import 'package:house_maid_project/Controllers/Registeration/Client/ClientRegController.dart';
-import 'package:house_maid_project/Controllers/otpcontrollerforgotscreen.dart';
+import 'package:house_maid_project/Controllers/otpstatescontroller.dart';
 import 'package:house_maid_project/CustomWidgets/NextButtonWidget.dart';
 
 class OtpClientRegisterationScreen extends StatefulWidget {
@@ -41,15 +41,6 @@ class _OtpClientRegisterationScreenState
     String enteredOTP = otpController.getOTP();
     _clientOtpController.otp = enteredOTP.obs;
     _clientOtpController.verifyOtp(context);
-
-    // if (otpController.verifyOTP(enteredOTP)) {
-
-    //   // Get.to(() => IdentityVerifiedScreen());
-    // } else {
-    //   ScaffoldMessenger.of(context).showSnackBar(
-    //     SnackBar(content: Text('Incorrect OTP. Please try again.')),
-    //   );
-    // }
   }
 
   @override

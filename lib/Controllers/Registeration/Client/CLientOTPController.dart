@@ -2,7 +2,7 @@ import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:house_maid_project/APIs/APIsClass.dart';
 import 'package:house_maid_project/CustomWidgets/errorDialogue.dart';
-import 'package:house_maid_project/Views/address/DataSubmitted.dart';
+import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/address/DataSubmitted.dart';
 
 class ClientOtpController extends GetxController {
   var apiService = APIs(); // Initialize the APIs service

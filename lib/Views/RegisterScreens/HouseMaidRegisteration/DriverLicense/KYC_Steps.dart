@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:house_maid_project/Controllers/Registeration/housemaid/HousemaidRegController.dart';
 import 'package:house_maid_project/CustomWidgets/errorDialogue.dart';
-import 'package:house_maid_project/Views/address/proofofAddress.dart';
-import 'package:house_maid_project/Views/address/vaccinated.dart';
+import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/address/proofofAddress.dart';
+import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/address/vaccinated.dart';
 
 class KYCScreen extends StatefulWidget {
   const KYCScreen({super.key});
@@ -204,4 +204,3 @@ class _KYCScreenState extends State<KYCScreen> {
     );
   }
 }
-

@@ -23,10 +23,11 @@ class OnboardingScreenTwo extends StatelessWidget {
                     width: 223,
                     height: 252.66,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(31), // Rounded corners
+                      borderRadius:
+                          BorderRadius.circular(31), // Rounded corners
                       image: const DecorationImage(
                         image: AssetImage(
-                            'assets/images/onboarding_image_2.png'), // Replace with your image asset path for screen 2
+                            'assets/images/dashboard3.png'), // Replace with your image asset path for screen 2
                         fit: BoxFit.contain,
                       ),
                     ),
@@ -36,7 +37,8 @@ class OnboardingScreenTwo extends StatelessWidget {
                   Container(
                     width: 367,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(31), // Rounded corners
+                      borderRadius:
+                          BorderRadius.circular(31), // Rounded corners
                     ),
                     padding: const EdgeInsets.all(8), // Optional padding
                     child: const Text(
@@ -57,7 +59,8 @@ class OnboardingScreenTwo extends StatelessWidget {
                   Container(
                     width: 367,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(31), // Rounded corners
+                      borderRadius:
+                          BorderRadius.circular(31), // Rounded corners
                     ),
                     padding: const EdgeInsets.all(8), // Optional padding
                     child: const Text(
@@ -78,7 +81,8 @@ class OnboardingScreenTwo extends StatelessWidget {
                     width: 52,
                     height: 12,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(31), // Rounded corners
+                      borderRadius:
+                          BorderRadius.circular(31), // Rounded corners
                       image: const DecorationImage(
                         image: AssetImage(
                             'assets/images/2nd_dot.png'), // Replace with your dots asset path
@@ -86,7 +90,7 @@ class OnboardingScreenTwo extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 65), // Add some spacing
+                  const SizedBox(height: 75), // Add some spacing
                   // Custom Next Button with Margins
                   Padding(
                     padding: const EdgeInsets.symmetric(

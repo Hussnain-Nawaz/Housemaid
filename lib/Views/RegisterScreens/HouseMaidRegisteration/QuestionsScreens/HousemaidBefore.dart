@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:house_maid_project/Controllers/Registeration/housemaid/HousemaidRegController.dart'; // Import the controller
 import 'package:house_maid_project/CustomWidgets/errorDialogue.dart';
 import 'package:house_maid_project/CustomWidgets/optionTile.dart';
-import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/experience.dart';
+import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/QuestionsScreens/experience.dart';
 
 class HouseMaidBefore extends StatefulWidget {
   const HouseMaidBefore({super.key});

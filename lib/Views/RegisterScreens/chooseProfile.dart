@@ -125,9 +125,9 @@ class _ChooseProfileScreenState extends State<ChooseProfileScreen> {
                 ),
                 child: Text(
                   selectedProfile == 'Client Hiring'
-                      ? 'I am a client'
+                      ? 'Continue as a client'
                       : selectedProfile == 'House Maid'
-                          ? 'I am a housemaid'
+                          ? 'Continue as house Maid'
                           : 'Next',
                   style: TextStyle(
                     color: Colors.white,

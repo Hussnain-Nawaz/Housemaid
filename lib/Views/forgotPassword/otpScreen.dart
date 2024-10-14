@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:house_maid_project/Controllers/otpcontrollerforgotscreen.dart';
+import 'package:house_maid_project/Controllers/otpstatescontroller.dart';
 import 'package:house_maid_project/CustomWidgets/NextButtonWidget.dart';
 
 class OTPVerificationScreen extends StatefulWidget {

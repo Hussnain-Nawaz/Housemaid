@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart'; // Import the controller
 import 'package:house_maid_project/Controllers/Registeration/housemaid/HousemaidRegController.dart';
 import 'package:house_maid_project/CustomWidgets/errorDialogue.dart';
-import 'package:house_maid_project/Views/DriverLicense/KYC_Steps.dart';
+import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/DriverLicense/KYC_Steps.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 

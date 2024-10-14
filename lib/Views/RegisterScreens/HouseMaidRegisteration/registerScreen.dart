@@ -366,6 +366,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                           ),
                         ),
                         SizedBox(height: screenHeight * 0.03),
+                      
                       ],
                     ),
                   ),

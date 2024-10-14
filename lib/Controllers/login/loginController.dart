@@ -7,7 +7,7 @@ import 'package:house_maid_project/APIs/APIsClass.dart'; // Import your API serv
 import 'package:house_maid_project/CustomWidgets/errorDialogue.dart';
 import 'package:house_maid_project/Views/HomeScreen/client.dart';
 import 'package:house_maid_project/Views/HomeScreen/housemaid.dart';
-import 'package:house_maid_project/Views/address/DataSubmitted.dart'; // Import loginModel
+import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/address/DataSubmitted.dart'; // Import loginModel
 
 class LoginController extends GetxController {
   var apiService = APIs(); // Initialize the APIs class

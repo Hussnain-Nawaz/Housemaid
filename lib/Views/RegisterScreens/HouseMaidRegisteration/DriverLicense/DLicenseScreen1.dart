@@ -1,7 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:house_maid_project/Views/DriverLicense/capturescreen.dart';
+import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/DriverLicense/capturescreen.dart';
 
 class ValidateLicenseScreen extends StatelessWidget {
   const ValidateLicenseScreen({super.key});

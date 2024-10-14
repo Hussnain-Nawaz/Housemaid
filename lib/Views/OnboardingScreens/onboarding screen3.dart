@@ -27,7 +27,7 @@ class OnboardingScreenThree extends StatelessWidget {
                           BorderRadius.circular(31), // Rounded corners
                       image: const DecorationImage(
                         image: AssetImage(
-                            'assets/images/onboarding_image_3.png'), // Replace with your image asset path for screen 2
+                            'assets/images/onboard3.png'), // Replace with your image asset path for screen 2
                         fit: BoxFit.contain,
                       ),
                     ),
@@ -90,7 +90,7 @@ class OnboardingScreenThree extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 60), // Add some spacing
+                  const SizedBox(height: 70), // Add some spacing
                   // Custom Next Button with Margins
                   Padding(
                     padding: const EdgeInsets.symmetric(

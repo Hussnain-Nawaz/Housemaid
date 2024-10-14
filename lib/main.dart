@@ -3,12 +3,15 @@ import 'package:flutter/services.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:house_maid_project/Bindings/appbindings.dart';
-import 'package:house_maid_project/Views/DriverLicense/KYC_Steps.dart';
+import 'package:house_maid_project/Views/Dashboard/housemaid.dart/homepage.dart';
 import 'package:house_maid_project/Views/HomeScreen/homeScreen.dart';
 import 'package:house_maid_project/Views/OnboardingScreens/onboardingScreen.dart';
+import 'package:house_maid_project/Views/RegisterScreens/ClientRegisteration/otp_client_reg.dart';
 import 'package:house_maid_project/Views/RegisterScreens/chooseProfile.dart';
 import 'package:house_maid_project/Views/login/loginScreen.dart';
 import 'package:house_maid_project/Views/splash/splash.dart';
+
+import 'Views/RegisterScreens/HouseMaidRegisteration/otp_registeration.dart';
 
 void main() async {
   // Lock the app orientation to portrait mode only
@@ -41,7 +44,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         // '/': (context) => SplashScreenView(),
-        '/': (context) => SplashScreenView(),
+        '/': (context) => LoginScreen(),
         '/onboarding': (context) => OnboardingScreenOne(),
         '/register': (context) => ChooseProfileScreen(),
         '/home': (context) => HomeScreen(),
@@ -50,4 +53,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
 // ROutes working .......

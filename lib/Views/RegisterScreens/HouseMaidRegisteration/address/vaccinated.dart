@@ -1,9 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:house_maid_project/CustomWidgets/errorDialogue.dart';
 import 'package:house_maid_project/CustomWidgets/optionTile.dart';
-import 'package:house_maid_project/Views/address/vaccinatedproof.dart'; // Adjust the import to the correct path
+import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/address/vaccinatedproof.dart'; // Adjust the import to the correct path
 
 class VaccinatedScreen extends StatefulWidget {
   const VaccinatedScreen({super.key});

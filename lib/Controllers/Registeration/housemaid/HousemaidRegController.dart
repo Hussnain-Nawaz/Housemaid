@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:house_maid_project/APIs/APIsClass.dart';
 import 'package:house_maid_project/CustomWidgets/errorDialogue.dart';
 import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/otp_registeration.dart';
-import 'package:house_maid_project/Views/address/DataSubmitted.dart';
+import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/address/DataSubmitted.dart';
 
 class HousemaidRegistrationController extends GetxController {
   // Variables for start and end times for each day of the week

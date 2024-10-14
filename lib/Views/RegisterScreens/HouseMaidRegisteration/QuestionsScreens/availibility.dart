@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:house_maid_project/Controllers/Registeration/housemaid/HousemaidRegController.dart';
-import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/hourlyRate.dart';
+import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/QuestionsScreens/hourlyRate.dart';
 
 class AvailabilityScreen extends StatefulWidget {
   const AvailabilityScreen({super.key});

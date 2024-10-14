@@ -1,9 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:house_maid_project/Controllers/Registeration/housemaid/HousemaidRegController.dart'; // Import the controller
 import 'package:house_maid_project/CustomWidgets/errorDialogue.dart';
-import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/selectCountry.dart';
+import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/QuestionsScreens/selectCountry.dart';
 
 class HourlyRateScreen extends StatefulWidget {
   const HourlyRateScreen({super.key});

@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:house_maid_project/Controllers/Registeration/housemaid/HousemaidRegController.dart';
 import 'package:house_maid_project/CustomWidgets/errorDialogue.dart';
 import 'package:house_maid_project/CustomWidgets/optionTile.dart'; // Import the controller
-import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/goal.dart';
+import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/QuestionsScreens/goal.dart';
 
 class ExperienceScreen extends StatefulWidget {
   const ExperienceScreen({super.key});

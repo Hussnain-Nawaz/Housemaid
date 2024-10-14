@@ -193,6 +193,136 @@ class _CLientRegisterationSCreenState extends State<CLientRegisterationSCreen> {
                           onPressed: _register,
                         ),
                         // Add remaining parts of your UI here...
+                        SizedBox(height: screenHeight * 0.03),
+                        // Or Register With Text
+                        Row(
+                          children: [
+                            const Expanded(
+                                child: Divider(color: Color(0xFFDEDEDE))),
+                            Padding(
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: screenWidth * 0.02),
+                              child: Text(
+                                'Or Register with',
+                                style: TextStyle(
+                                  color: const Color(0xFF8391A1),
+                                  fontFamily: 'Urbanist',
+                                  fontSize: screenWidth * 0.04,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ),
+                            const Expanded(
+                                child: Divider(color: Color(0xFFDEDEDE))),
+                          ],
+                        ),
+                        SizedBox(height: screenHeight * 0.03),
+                        // Social Media Buttons
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Expanded(
+                              child: Container(
+                                height: screenHeight * 0.08,
+                                decoration: BoxDecoration(
+                                  borderRadius:
+                                      BorderRadius.circular(screenWidth * 0.08),
+                                  border: Border.all(
+                                      color: const Color(0xFFDEDEDE)),
+                                  color: const Color(0xFFFAFAFA),
+                                ),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/google.png',
+                                      width: screenWidth * 0.07,
+                                      height: screenHeight * 0.05,
+                                    ),
+                                    SizedBox(width: screenWidth * 0.03),
+                                    Text(
+                                      'Google',
+                                      style: TextStyle(
+                                        fontFamily: 'Urbanist',
+                                        fontSize: screenWidth * 0.045,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            SizedBox(width: screenWidth * 0.04),
+                            Expanded(
+                              child: Container(
+                                height: screenHeight * 0.08,
+                                decoration: BoxDecoration(
+                                  borderRadius:
+                                      BorderRadius.circular(screenWidth * 0.08),
+                                  border: Border.all(
+                                      color: const Color(0xFFDEDEDE)),
+                                  color: const Color(0xFFFAFAFA),
+                                ),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/facebook.png',
+                                      width: screenWidth * 0.07,
+                                      height: screenHeight * 0.05,
+                                    ),
+                                    SizedBox(width: screenWidth * 0.03),
+                                    Text(
+                                      'Facebook',
+                                      style: TextStyle(
+                                        fontFamily: 'Urbanist',
+                                        fontSize: screenWidth * 0.045,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: screenHeight * 0.03),
+                        // Already have an account
+                        Center(
+                          child: RichText(
+                            text: TextSpan(
+                              text: "Already have an account? ",
+                              style: TextStyle(
+                                color: const Color(0xFF000000),
+                                fontFamily: 'Urbanist',
+                                fontSize: screenWidth * 0.045,
+                                fontWeight: FontWeight.w500,
+                                letterSpacing: 0.16,
+                                height: 1.4,
+                              ),
+                              children: [
+                                TextSpan(
+                                  text: "Login Now",
+                                  style: TextStyle(
+                                    color: const Color(0xFFFEB0D9),
+                                    fontFamily: 'Urbanist',
+                                    fontSize: screenWidth * 0.045,
+                                    fontWeight: FontWeight.w700,
+                                    letterSpacing: 0.16,
+                                    height: 1.4,
+                                  ),
+                                  recognizer: TapGestureRecognizer()
+                                    ..onTap = () {
+                                      Get.to(() => LoginScreen());
+                                    },
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: screenHeight * 0.03),
                       ],
                     ),
                   ),

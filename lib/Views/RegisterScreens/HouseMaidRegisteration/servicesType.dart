@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:house_maid_project/Controllers/Registeration/housemaid/HousemaidRegController.dart';
 import 'package:house_maid_project/CustomWidgets/errorDialogue.dart';
 import 'package:house_maid_project/CustomWidgets/optionTile.dart';
-import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/availibility.dart';
+import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/QuestionsScreens/availibility.dart';
 
 class ServicesScreen extends StatefulWidget {
   const ServicesScreen({super.key});

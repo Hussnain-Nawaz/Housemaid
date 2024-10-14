@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:house_maid_project/CustomWidgets/NextButtonWidget.dart';
-import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/HousemaidBefore.dart';
+import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/QuestionsScreens/HousemaidBefore.dart';
 
 class GetStartedScreen extends StatelessWidget {
   const GetStartedScreen({super.key});

@@ -14,7 +14,6 @@ class OTPController {
         otpController4.text;
   }
 
-
   void dispose() {
     otpController1.dispose();
     otpController2.dispose();

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:house_maid_project/Controllers/Registeration/housemaid/HousemaidRegController.dart';
-import 'package:house_maid_project/Views/DriverLicense/DLicenseScreen1.dart';
+import 'package:house_maid_project/Views/RegisterScreens/HouseMaidRegisteration/DriverLicense/DLicenseScreen1.dart';
 
 class Selectcountry extends StatefulWidget {
   const Selectcountry({super.key});
