@@ -51,23 +51,28 @@
     <array>
         <dict>
             <key>CFBundleURLName</key>
-            <string>housemaid</string> <!-- Your app's identifier -->
+            <string>housemaid</string>
             <key>CFBundleURLSchemes</key>
             <array>
-                <string>housemaid</string> <!-- Your app's custom scheme -->
+                <string>housemaid</string>
             </array>
         </dict>
     </array>
 
-    <!-- Add permissions for Camera and Internet -->
+    <!-- Camera and Media Permissions -->
     <key>NSCameraUsageDescription</key>
     <string>We need access to your camera to capture photos and videos.</string>
+
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>We need access to your photo library to save and view media.</string>
+
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>We need permission to add photos and videos to your library.</string>
 
     <key>NSAppTransportSecurity</key>
     <dict>
         <key>NSAllowsArbitraryLoads</key>
         <true/>
     </dict>
-
 </dict>
 </plist>
