@@ -46,7 +46,7 @@
     <key>UIApplicationSupportsIndirectInputEvents</key>
     <true/>
 
-    <!-- Add this part for deep linking -->
+    <!-- Deep Linking Configuration -->
     <key>CFBundleURLTypes</key>
     <array>
         <dict>
@@ -59,15 +59,18 @@
         </dict>
     </array>
 
-    <!-- Camera and Media Permissions -->
+    <!-- Permissions for Camera, Photo Library, and Media Access -->
     <key>NSCameraUsageDescription</key>
     <string>We need access to your camera to capture photos and videos.</string>
-
+    
     <key>NSPhotoLibraryUsageDescription</key>
-    <string>We need access to your photo library to save and view media.</string>
-
+    <string>We need access to your photo library to view and upload media.</string>
+    
     <key>NSPhotoLibraryAddUsageDescription</key>
-    <string>We need permission to add photos and videos to your library.</string>
+    <string>We need permission to save photos and videos to your library.</string>
+
+    <key>NSMicrophoneUsageDescription</key>
+    <string>We need access to the microphone for recording audio during video capture.</string>
 
     <key>NSAppTransportSecurity</key>
     <dict>

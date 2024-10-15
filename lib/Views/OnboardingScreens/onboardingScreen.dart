@@ -8,6 +8,10 @@ class OnboardingScreenOne extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Get screen width and height for responsiveness
+    final screenWidth = MediaQuery.of(context).size.width;
+    final screenHeight = MediaQuery.of(context).size.height;
+
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
@@ -15,29 +19,30 @@ class OnboardingScreenOne extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // Image with Border Radius
+              SizedBox(height: screenHeight * 0.12),
+              // Responsive Image Container
               Container(
-                width: 223,
-                height: 252.66,
+                width: screenWidth * 0.45, // 60% of screen width
+                height: screenHeight * 0.3, // 30% of screen height
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(31), // Rounded corners
+                  borderRadius: BorderRadius.circular(screenWidth * 0.08),
                   image: const DecorationImage(
-                    image: AssetImage(
-                        'assets/images/onboarding_image.png'), // Replace with your image asset path
+                    image: AssetImage('assets/images/onboarding_image.png'),
                     fit: BoxFit.contain,
                   ),
                 ),
               ),
-              const SizedBox(height: 20), // Add some spacing
-              // Welcome Text with Border Radius
+              SizedBox(height: screenHeight * 0.02), // 2% of screen height
+
+              // Responsive Welcome Text
               Container(
-                width: 367,
+                width: screenWidth * 0.9, // 90% of screen width
+                padding: EdgeInsets.all(screenWidth * 0.02), // 2% padding
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(31), // Rounded corners
+                  borderRadius: BorderRadius.circular(screenWidth * 0.08),
                 ),
-                padding: const EdgeInsets.all(8), // Optional padding
                 child: const Text(
-                  'Welcome back! Glad to see you, Again!',
+                  'House Cleaning',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Color(0xFF000000),
@@ -49,53 +54,54 @@ class OnboardingScreenOne extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 20), // Add some spacing
-              // Description Text with Border Radius
+              SizedBox(height: screenHeight * 0.02), // 2% of screen height
+
+              // Responsive Description Text
               Container(
-                width: 367,
+                width: screenWidth * 0.9,
+                padding: EdgeInsets.all(screenWidth * 0.02),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(31), // Rounded corners
+                  borderRadius: BorderRadius.circular(screenWidth * 0.08),
                 ),
-                padding: const EdgeInsets.all(8), // Optional padding
                 child: const Text(
                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    color: Color(0xFF8391A1), // var(--Gray, #8391A1)
+                    color: Color(0xFF8391A1),
                     fontFamily: 'Urbanist',
                     fontSize: 20,
                     fontWeight: FontWeight.w500,
-                    height: 1.25, // Line height of 125%
+                    height: 1.25,
                   ),
                 ),
               ),
-              const SizedBox(height: 40), // Add some spacing
-              // Pagination Dots with Border Radius
+              SizedBox(height: screenHeight * 0.12), // 12% of screen height
+
+              // Pagination Dots Container
               Container(
-                width: 52,
-                height: 12,
+                width: screenWidth * 0.15, // 15% of screen width
+                height: screenHeight * 0.015, // 1.5% of screen height
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(31), // Rounded corners
+                  borderRadius: BorderRadius.circular(screenWidth * 0.08),
                   image: const DecorationImage(
-                    image: AssetImage(
-                        'assets/images/pagination_dots.png'), // Replace with your dots asset path
+                    image: AssetImage('assets/images/pagination_dots.png'),
                     fit: BoxFit.contain,
                   ),
                 ),
               ),
-              const SizedBox(height: 50), // Add some spacing
-              // Custom Next Button with Margins
+              SizedBox(height: screenHeight * 0.02), // 2% of screen height
+
+              // Custom Next Button with Responsive Padding
               Padding(
-                padding: const EdgeInsets.symmetric(
-                    horizontal: 16.0), // Add horizontal margins
+                padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.04),
                 child: CustomNextButton(
                   text: 'Next',
                   onPressed: () {
                     Get.to(() => OnboardingScreenTwo());
-                    // Handle Next button press
                   },
                 ),
               ),
+              SizedBox(height: screenHeight * 0.02),
             ],
           ),
         ),

@@ -182,6 +182,8 @@ class _LoginScreenState extends State<LoginScreen> {
 
                           // Role Selection
                           SwitchListTile(
+                            activeColor:
+                                const Color.fromARGB(255, 245, 108, 153),
                             title:
                                 Text(isClientSelected ? "Client" : "Housemaid"),
                             value: isClientSelected,

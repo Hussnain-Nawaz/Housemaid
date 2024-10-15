@@ -7,6 +7,7 @@ import 'package:house_maid_project/Views/Chats/chatsList.dart';
 import 'package:house_maid_project/Views/Dashboard/housemaid.dart/homepage.dart';
 import 'package:house_maid_project/Views/HomeScreen/homeScreen.dart';
 import 'package:house_maid_project/Views/OnboardingScreens/onboardingScreen.dart';
+import 'package:house_maid_project/Views/RegisterScreens/ClientRegisteration/ClientIdentityVerified.dart';
 import 'package:house_maid_project/Views/RegisterScreens/ClientRegisteration/otp_client_reg.dart';
 import 'package:house_maid_project/Views/RegisterScreens/chooseProfile.dart';
 import 'package:house_maid_project/Views/login/loginScreen.dart';
@@ -45,7 +46,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         // '/': (context) => SplashScreenView(),
-        '/': (context) => SplashScreenView(),
+        '/': (context) => IdentityVerifiedScreen(),
         '/onboarding': (context) => OnboardingScreenOne(),
         '/register': (context) => ChooseProfileScreen(),
         '/home': (context) => HomeScreen(),
