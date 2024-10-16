@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         // '/': (context) => SplashScreenView(),
-        '/': (context) => IdentityVerifiedScreen(),
+        '/': (context) => SplashScreenView(),
         '/onboarding': (context) => OnboardingScreenOne(),
         '/register': (context) => ChooseProfileScreen(),
         '/home': (context) => HomeScreen(),
@@ -56,4 +56,4 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// ROutes working .......
+//Pushing yesterday same code
